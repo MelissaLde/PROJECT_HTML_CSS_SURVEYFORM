@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="asset/css/style.css">
+
+  <title>Basic Survey Form</title>
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <!-- NAV -->
+  <!-- HEADER -->
+  <header>
+    <h1 id="title">Formulaire d'enquete</h1>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <p id="description">Dites-nous comment nous pouvons améliorer freeCodeCamp</p>
+    <form method="post" action="#" id="survey-form">
+      <!-- IDENTITY -->
+      <fieldset>
+        <legend> Votre identité</legend>
+        <div class="form-group">
+          <label id="name-label" for="name">Nom</label>
+          <input type="text" name="name" id="name" placeholder="Entrez votre nom" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Entrez votre email" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input type="number" name="number" id="number" placeholder="Age" min="1" max="105" required>
+        </div>
+        <div class="form-group">
+          <label id="state-label" for="select">Situation professionnelle:</label>
+          <select id="dropdown">
+            <option value="">Selectionner votre situation</option>
+            <option value="student">Etudiant</option>
+            <option value="full time job">CDI</option>
+            <option value="full time learner">CDD</option>
+            <option value="prefer not to say">Ne pas dire</option>
+            <option value="other">Autre</option>
+          </select>
+        </div>
+      </fieldset>
+      <!-- PREFERENCE -->
+      <fieldset>
+        <legend id="prefer"> Vos préferences</legend>
+        <p id="div-p">Recommanderiez-vous Freecodecamp à un ami ?</p>
+        <div class="form-group">
+          <input type="radio" id="definitely" name="friend-radio" value="definitely" checked>
+          <label for="definitely">Absolument</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" id="maybe" name="friend-radio" value="maybe">
+          <label for="maybe">Peut-etre</label>
+        </div>
+        <div>
+          <class="form-group">
+            <input type="radio" id="not-sure" name="friend-radio" value="not-sure">
+            <label for="not sure">Pas certain</label>
+        </div>
+        <div class="form-group">
+          <label id="preference-label" for="select">Que preferez-vous:</label>
+          <select id="dropdown">
+            <option value="">Selectionner une option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projets</option>
+            <option value="community">Communautés</option>
+            <option value="open-source">Open source</option>
+          </select>
+        </div>
+      </fieldset>
+      <!-- THINGS TO IMPROVE -->
+      <fieldset>
+        <legend> Choses à améliorer </legend>
+        <div class="form-group">
+          <input class="things-div" type="checkbox" id="front-end projects" name="improve-checkbox"
+            value="front-end projects" checked>
+          <label for="front-end projects">Projets frontaux</label>
+        </div>
+        <div class="form-group">
+          <input class="things-div" type="checkbox" id="back-end projects" name="improve-checkbox"
+            value="back-end projects">
+          <label for="back-end projects">Projet finaux</label>
+        </div>
+        <div class="form-group">
+          <input class="things-div" type="checkbox" id="data visualization" name="improve-checkbox"
+            value="data visualization">
+          <label for="data visualization">Visualisation de données</label>
+        </div>
+        <div class="form-group">
+          <input class="things-div" type="checkbox" id="challenges" name="improve-checkbox" value="challenges">
+          <label for="challenges">Défis</label>
+        </div>
+        <div class="form-group">
+          <input class="things-div" type="checkbox" id="open source community" name="improve-checkbox"
+            value="open source community">
+          <label for="open source community">Communauté Open Source</label>
+        </div>
+        <div class="form-group">
+          <input class="things-div" type="checkbox" id="gitter help rooms" name="improve-checkbox"
+            value="gitter help rooms">
+          <label for="gitter help rooms">Salle d'aide</label>
+        </div>
+        <div class="form-group">
+          <input class="things-div" type="checkbox" id="videos" name="improve-checkbox" value="videos">
+          <label for="videos">Vidéos</label>
+        </div>
+        <div class="form-group">
+          <input class="things-div" class="things-div" type="checkbox" id="city meetups" name="improve-checkbox"
+            value="city meetups">
+          <label for="city meetups">Cité Meetups</label>
+        </div>
+        <div class="form-group">
+          <input class="things-div" type="checkbox" id="wiki" name="improve-checkbox" value="wiki">
+          <label for="wiki">Wikipédia</label>
+        </div>
+        <div class="form-group">
+          <input class="things-div" type="checkbox" id="forum" name="improve-checkbox" value="forum">
+          <label for="forum">Forum</label>
+        </div>
+        <div class="form-group">
+          <input class="things-div" type="checkbox" id="additional courses" name="improve-checkbox"
+            value="additional courses">
+          <label for="additional courses">Les cours supplémentaires</label>
+        </div>
+      </fieldset>
+      <!-- POSTS -->
+      <fieldset>
+        <legend> Messages </legend>
+        <div class="form-group">
+          <label id="comments-label" for="story">Vos commentaires ou vos suggestions:</label>
+          <textarea id="story" name="story" rows="5" cols="33"></textarea>
+        </div>
+        <p id="range">Jaugez votre satisfaction</p>
+        <div>
+          <input type="range" id="start" name="volume" min="0" max="10">
+        </div>
+      </fieldset>
+      <!-- SEND MY FORMATION -->
+      <fieldset>
+        <legend>Envoyer mes informations</legend>
+        <div id="end">
+          <button id="submit" type="submit">Envoyer</button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <p>Linde Melissa</p>
+  </footer>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

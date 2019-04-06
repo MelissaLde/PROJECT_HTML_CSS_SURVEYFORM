@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+body {
+	background: #f9edf6;
+	font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+main {
+	position: absolute;
+	width: 40%;
+	padding: 4%;
+	margin-bottom: 20%;
+	border-top: 10px solid #f9d6f1;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+	background: white;
+	z-index: 3;
+	top: 200px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+header {
+	position: absolute;
+	background: pink;
+	width: 100%;
+	top: 0;
+	z-index: 2;
+	height: 300px;
+}
+
+#title {
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	margin-top: 80px;
+	font-weight: bold;
+}
+
+#dropdown {
+	padding: 5px;
+	margin-right: 200px;
+	margin-top: 20px;
+	border: 1px solid lightgrey;
+	border-radius: 2px;
+}
+
+#end {
+	margin-top: 5%;
+}
+
+#submit {
+	background-color: pink;
+	border-radius: 4px;
+	color: white;
+	font-size: 1em;
+	height: 40px;
+	width: 96px;
+	margin: 25px;
+	border: 0px solid;
+}
+
+#footer {
+	font-weight: bold;
+	margin: 3%;
+}
+
+fieldset {
+	border-style: none;
+	margin: 10% 0;
+}
+
+legend {
+	font-weight: bold;
+	font-size: 1.5rem;
+	padding-bottom: 3%;
+}
+
+.form-group {
+	margin: 10% 0;
+}
+
+#start {
+	width: 100%;
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+	margin-top: 2%;
+	padding: 2%;
+	width: 70%;
+	border: none;
+	border-bottom: 0.5px solid lightgrey;
+	outline: none;
+	display: block;
+}
+
+::placeholder {
+	color: lightgrey;
+	opacity: 1;
+	font-size: 0.9em;
+	font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+label {
+	margin-left: 2%;
+	font-size: 1.2em;
+}
+
+#range {
+	padding-bottom: 3%;
+}
+
+textarea {
+	width: 100%;
+	border: none;
+	border-bottom: 0.5px solid lightgrey;
+	outline: none;
+	margin-top: 4%;
+}
+
+@media screen and (max-width: 1100px) {
+	main {
+		width: 80%;
+	}
+}
