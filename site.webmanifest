@@ -1,6 +1,6 @@
 {
-  "short_name": "marilyn-tribute-page",
-  "name": "marilyn-tribute",
+  "short_name": "basic-survey-form",
+  "name": "survey form",
   "icons": [{
     "src": "icon.png",
     "type": "image/png",
